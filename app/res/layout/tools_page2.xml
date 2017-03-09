@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:background="#b2bce0"
+        android:textColor="#808080"
+        android:textSize="25sp"
+        android:text="②BMR基础代谢率计算"
+        />
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="1"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginRight="30dp"
+	    android:layout_marginBottom="65dp"
+	    android:background="#E9E9E9"
+	    >
+	    
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+	    
+		    <Spinner
+			    android:id="@+id/tools_bmr_age"
+			    android:layout_width="match_parent" 
+			    android:layout_height="match_parent"
+			    android:layout_weight="2"
+			    android:entries="@array/age" 
+			    />
+	    
+	    	<Spinner
+			    android:id="@+id/tools_bmr_sex"
+			    android:layout_width="match_parent" 
+			    android:layout_height="match_parent"
+			    android:layout_weight="5"
+			    android:entries="@array/sex" 
+			    />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+	    	android:layout_marginTop="15dp">
+	    
+		    <EditText
+		        android:id="@+id/tools_bmr_weight"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="2"
+		        android:numeric="integer"
+		        android:textColor="#727e88"
+		        android:hint="体重"
+		        />
+	    
+	    	<TextView 
+	    	    android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="5"
+		        android:gravity="center"
+		        android:textColor="#727e88"
+		        android:text="kg"
+		        />
+	    </LinearLayout>
+	    
+	    <Spinner
+		    android:id="@+id/tools_bmr_action"
+		    android:layout_width="match_parent" 
+		    android:layout_height="wrap_content"
+		    android:entries="@array/action"
+	    	android:layout_marginTop="15dp"
+		    />
+	    
+	    <Button
+	        android:id="@+id/tools_bmr_calculate"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/button"
+	        android:layout_margin="15dp"
+	        android:textColor="#fff"
+	        android:text="计算" />
+	    
+	    <TextView
+		    android:id="@+id/tools_bmr_result"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="15dp"
+		    android:gravity="center"
+		    android:minHeight="50dp"
+		    android:textSize="20sp"
+		    android:textColor="#727e88" />
+		
+		</LinearLayout>
+</LinearLayout>
