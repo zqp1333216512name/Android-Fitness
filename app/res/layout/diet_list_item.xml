@@ -80,6 +80,13 @@
 			android:textColor="#a57a73"
 			android:text="克"
 			/>
+		
+		<TextView
+		    android:id="@+id/diet_list_item_id"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			/>
 	</LinearLayout>
 	
 	<LinearLayout
